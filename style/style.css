@@ -7,6 +7,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #FC4445;
+    overflow-x: hidden;
 }
 
 .container {
