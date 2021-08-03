@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #FC4445;
+    background-color: #303179;
     overflow-x: hidden;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 #container-note {
-    background-color: #FC4445;
+    background-color: #717DFF;
     width: 100%;
     max-width: 900px;
     margin: auto;
@@ -27,7 +27,7 @@ body {
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #3FEEE6;
+    background-color: #fae5df;
 }
 
 header h1 {
@@ -49,6 +49,7 @@ header h1 {
 }
 
 label {
+    color: #ed7966;
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -59,7 +60,7 @@ label {
     width: 30%;
     border-radius: 20px;
     border: 0;
-    background-color: #3FEEE6;
+    background-color: #ed7966;
 }
 
 .text input[type="text"] {
@@ -77,12 +78,12 @@ label {
 
 #secDiv {
     text-align: center;
-    border: 30px solid #FC4445;
+    border: 30px solid #303179;
     min-height: 200px;
     max-height: 200px;
     float: left;
     width: 50%;
-    background-color: #3FEEE6;
+    background-color: #fae5df;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -90,7 +91,7 @@ label {
 #secDiv input[type="button"] {
     border: 0;
     border-radius: 10px;
-    background-color: #FC4445;
+    background-color: #ed7966;
     font-size: 1em;
     margin: 10px 0;
     width: 40%;
@@ -109,7 +110,7 @@ label {
 }
 
 .modal {
-    background-color: white;
+    background-color: #fae5df;
     width: 80%;
     max-height: 70vh;
     overflow: scroll;
@@ -134,7 +135,7 @@ label {
     padding: 10px 40px;
     font-size: 15px;
     margin-bottom: 20px;
-    background-color: #3FEEE6;
+    background-color: #ed7966;
     border: 0;
 }
 
