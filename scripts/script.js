@@ -1,5 +1,17 @@
 const BODY = document.body;
 
+function setAttributes(el, attrs) {
+    for(var key in attrs) {
+        el.setAttribute(key, attrs[key]);
+    }
+}
+
+function setChilds(el, childs) {
+    for(var key in childs) {
+        el.appendChild(childs[key]);
+    }
+}
+
 function toSend() {
     var text = document.getElementById("note");
     var textValue = text.value;
@@ -40,15 +52,11 @@ function createDiv(textNode, textFinal) {
     p.appendChild(textNode);
 
     var input = document.createElement("input");
-    input.setAttribute("type", "button");
-    input.setAttribute("onclick", "openIt(this)");
-    input.setAttribute("value", "Full View");
+    setAttributes(input, { "type": "button", "onclick": "openIt(this)", "value": "Full View" });
 
     var div = document.createElement("div");
     div.setAttribute("id", "secDiv");
-    div.appendChild(ghost);
-    div.appendChild(p);
-    div.appendChild(input);
+    setChilds(div, { ghost, p, input });
 
     var container = document.getElementById("container-note");
     container.appendChild(div);
@@ -61,14 +69,11 @@ function createModal(text) {
     div.setAttribute("class", "modal");
 
     var button = document.createElement("input");
-    button.setAttribute("type", "button");
-    button.setAttribute("value", "Close");
-    button.setAttribute("onclick", "closeIt(this)");
+    setAttributes(button, { "type": "button", "value": "Close", "onclick": "closeIt(this)" });
 
     var p = document.createElement("p");
     p.appendChild(text);
-    div.appendChild(p);
-    div.appendChild(button);
+    setChilds(div, { p, button });
 
     var section = document.getElementById("secNote");
     section.appendChild(div);
